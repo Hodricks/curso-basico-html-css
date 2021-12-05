@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando HTML - Primeiro exercício</title>
+    <link rel="shortcut icon" href="Imagens/project delta vsxt.ico" type="image/x-icon">
+    <title>Testando HTML/CSS - Aplicando conhecimentos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Irei me tornar um site! WEEEE</h1>
     <h1>By Hodricks &#x1F60E</h2>
     <hr>
+
     <p>Esse é o meu primeiro projeto em HTML/CSS, ramo simboraaaaa kkkkk.</p>
     <p>Dando início a construção de uma página web.</p>
     <p>Após criar uma pasta local que irá armazenar os arquivos do projeto, <br> iremos usar o VS Code para programar.</p>
+
     <h2>Testando títulos, parágrafos e quebras de linhas</h2>
     <hr>
+
     <p>Podemos escrever Títulos Primários com o comando &lt;h1&gt, Subtítulos com &lth2&gt, &lth3&gt...</p>
     <p>Podemos escrever parágrafos com comando &lt;p&gt;. Se precisar quebrar o texto "dessa <br>forma", use o comando &lt;br&gt;.</p>
     <!--&lt; significa Less than (menor que), e &gt; significa Greather than (maior que), que são os sinais da matemárica < e >.-->
@@ -35,6 +39,7 @@
 
     <h2>Buscando imagens para inserir no seu site</h2>
     <hr>
+
     <p>Antes de inserir imagens na sua página web, verifique se a mesma possui <br>
          ou não as regras de direitos autorais, para evitar processos judiciais. <br><br>
 
@@ -47,13 +52,16 @@
 4º - Acessar o site br.freepik.com. <br><br>
 Lembre-se de sempre verificar se as imagens escolhidas nesses sites são realmente livres de direitos autorais.
   </p> <br>
+
   <h2>Quanto ao dimensionamento das imagens em seu site</h2>
   <hr>
+
   <p>Para imagens grandes, com grande preenchimento, você pode utilizar os tamanhos de 650 a 1200 pixels. <br> Já para imagens pequenas, de menor preenchimento (exemplo uma logo) você pode usar os <br> tamanhos de 200 a 400 pixels. <br><br>Fique atento quanto ao tamanho das imagens! Grandes imagens pesam &PlusMinus; de 2 mb (ou 2000 kb) para cima, <br> portanto evite por nos seus sites imagens tão grandes assim. Busque redimensiona-las para chegarem <br>
-    mais ou menos em torno de 10/100/200 kb no máximo, a depender dos tamanhos das suas imagens. <br> <br>Você pode redimensionar as imagens em um editor de imagens como o GIMP por exemplo.  </p> <br>
+    mais ou menos em torno de 10/100/200 kb no máximo, a depender dos tamanhos das suas imagens. <br> <br>Você pode redimensionar as imagens em um editor de imagens como o GIMP por exemplo.</p><br>
 
     <h2>Adicionando imagens no seu site</h2>
     <hr>
+
     <p>Depois que as imagens já foram baixadas e redimensionadas, iremos testar subindo as cargas de imagens.</p> <br>
 
     <h3>Logo abaixo, você verá uma imagem que está na mesma pasta deste projeto:</h3>
@@ -67,7 +75,27 @@ Lembre-se de sempre verificar se as imagens escolhidas nesses sites são realmen
     <h3>E agora, você verá uma imagem que está hospedada em um link externo: <br>
     (Obs: Caso o servidor hospedeiro do link externo caia, esta imagem abaixo irá sumir kkkk.)</h3> <br>
 
-    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="Logo do JavaScript"> <!--URL--> <br>
+    <img src="https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png" alt="Logo do JavaScript"> <!--URL--> <br><br><br>
+
+
+    <h2>Adicionando um ícone na janela do seu site</h2>
+    <hr>
+    
+    <p>Para adicionar um ícone a janela do seu site, primeiramente baixe uma imagem .png bem pequena e com poucos detalhes, <br> para servir de ícone (algo que fique entorno de 10 kb), ou crie uma imagem .png para servir de ícone, que pode ser feito no <br> https://www.canva.com/pt_br/. Você pode pesquisar e baixar um ícone no site https://iconarchive.com/, <br>ou tu pode converter uma imagem já baixada em .png para .ico no site https://favicon.io/.</p><br>
+        
+        <h3>Iremos usar a imagem abaixo neste exemplo:</h3>
+    <img src="Imagens/Project delta VSX.png" alt="Ícone teste do site"> <br>
+
+    <p>Iremos ajustar o fundo da imagem, deixando-a transparente. Podemos fazer isso no programa GIMP. Iremos abrir a <br> imagem com o GIMP, e depois selecionaremos a opção "Seleção Contígua". Logo após clique na parte do fundo da <br> imagem que você quer deixar transparente e apete delete (caso não funcione, adicione um canal alpha no menu <br> Camadas > Transparência). Por fim, exporte a imagem como .png.</p>
+
+    <p>Agora iremos converter essa imagem acima em .ico, lá no site https://favicon.io/, e após isso colocaremos o arquivo <br> .ico na pasta de imagens do projeto. Em seguida, no comando lá do topo do código index html no VS Code, na parte da <br> "head", expandindo-a, crie uma linha acima do "title", e digite "link:favicon". Após isso, no centro das "" do href aperte o <br> ctrl+espaço para você pesquisar o arquivo .ico que tu irá adicionar no seu site, e em seguida ele irá mostrar <br> na aba do seu site o ícone.</p><br>
+
+    
+
+
+    
+
+
 
     
 
