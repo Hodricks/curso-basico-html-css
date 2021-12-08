@@ -104,22 +104,90 @@ Lembre-se de sempre verificar se as imagens escolhidas nesses sites são realmen
     <p>Podemos usar a tag <mark>"mark"</mark>, <mark>que marca o texto com um marcador</mark>.</p>
     <p>É possível fazer uma alteração pontual no comando da tag "mark", utilizando o comando "mark style", <br> e assim por exemplo alterar a cor do marcador. O caminho do comando e o resultado ficam assim: <br> <br>
 
-        "mark style="background-color: lime;">a cor do marcador agora fica verde>mark"  &rightarrow;
+        "<code>mark style="background-color: lime;">a cor do marcador agora fica verde>mark</code>"  &rightarrow;
 
     <mark style="background-color: lime;">a cor do marcador agora fica verde</mark><br><br>
 
     Caso você queira alterar a cor de todos os marcadores de uma página, tu pode adicionar um comando lá em cima no código, <br> depois do "title", chamada "style", e dentro dela abrir o parâmetro: <br><br>
 
-    style <br>
-    mark{ <br> 
-    background-color: lime; <br>
-} <br>
-style<br><br>
+    <pre>
+        <code>
+            style
+                mark{
+                   background-color: lime;
+                }
+            style
+        </code>
+    </pre><br><br>
 
 Dessa forma, todos os marcadores da página serão verdes no estilo "<mark style="background-color: lime;">lime</mark>". <br> *Obs: Os códigos citados neste tópico apresentam "&lt; &gt;" em alguns pontos, <br> principalmente no início e no final de segmento do código.</p> <br>
 
 <h3>Texto grande e texto pequeno</h3>
-<p>Vamos criar um texto grande e um texto pequeno...</p>
+<p>Vamos criar um <big>texto grande</big> e um <small>texto pequeno</small>... Para o texto grande, tu pode usar a tag "big",<br> porém ela está meio obsoleta então cuidado. Já para o texto pequeno, tu usa a tag "small". </p> <br>
+
+<h3>Texto deletado ou riscado, e texto inserido ou sublinhado</h3>
+    <p>Podemos <del>deletar/riscar um texto</del> usando a tag "del". Já para o <ins>texto inserido/sublinhado</ins> se usa a tag "ins". <br> Podmeos também <u>sublinhar um texto usando a tag "u"</u>, mas ela pode estar um pouco defasada por não ser <br> semânntica, então cuidado. </p> <br>
+
+    <h3>Texto sobrescrito e subscrito</h3>
+    <p>Para inserir-mos coisas sobrescritas do tipo x<sup>20</sup>+3, usamos a tag "sup" no elemento que deseja sobrescrever. <br>
+    Já para subscrever algum elemento exemplo H<sub>2</sub>0, usamos a tag "sub".</p> <br>
+
+    <h3>Formatação usando Código-Fonte/Pré-Formatação</h3>
+    <p>O comando "document.getElementById('teste')" é escrito em linguagem JavaScript. Perceba que o comando descrito <br> está com uma formatação de difícil visualização detalhada, e para aplicar uma formatação que permita uma visualização <br> melhor usamos a tag "code", e assim a escrita do comando usando a tag fica: <code>document.getElementById('teste')</code>. </p> <br>
+
+    <h3>Indentação de linhas de código/funções/expressões matemáticas</h3>
+    <p>É possível fazer a organização de linhas de expressões com o uso da tag de comando "pre". Iremos ver agora uma linha <br> de comando em código python sem a formatação indentada e com a formatação indentada pela tag "pre": <br><br>
+    
+    <big>Sem indentação</big>: <br> <br>
+
+    <code>
+        num = int(input('Digite um número.'))
+        if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+        else:
+        print(f'0 número {num} é ÍMPAR')
+    </code> <br> <br><br>
+
+    <big>Com indentação (tag "pre"):</big>
+
+    <pre>
+        <code>
+    num = int(input('Digite um número.'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR')
+    print('Fim do programa.')
+        </code>
+    </pre>
+
+    Dá pra recuar ou avançar o espaçamento do parágrafo de comando da tag "pre", selecionando o código todo e usando o atalho <br> <strong>"shift+tab" para recuar</strong>, e a tecla <strong>tab para avançar</strong>.</p> <br>
+
+    <h3>Citações em parágrafos</h3>
+    <p>Temos uma tag semântica para fazer uma citação simples, a tag "q". Exemplo: <br> Como dizia fulano de tal: <q>O computador é um burro muito rápido...</q>. <br><br> Essa forma de citação simples basicamente adiciona essas aspas na sua frase, porém existe também a citação <br> completa, que faz um recúo em uma citação utilizando a tag "blockquote", e com essa tag de comando temos <br> o exemplo abaixo: <br><br>
+    
+    De acordo com Michelle Horn, em sua matéria no site Trybe: <blockquote cite="https://blog.betrybe.com/python/">O Python é uma linguagem de programação de alto nível utilizada em diferentes tipos de aplicações, como para o <br> desenvolvimento web, em Machine Learning, no desenvolvimento de jogos e muito mais.</blockquote>
+
+Com essa citação completa, é possível lincar a citação a um endereço de onde aquela informação foi retirada. <br> Essa informação não aparece no seu site, porém faz com que o motor de busca dos navegadores referenciem <br> o conteúdo citado, servindo também para garantia dos direitos autorais do dono deste determinado conteúdo. </p> <br>
+
+<h3>Descrição de abreviações</h3>
+<p>Podemos atribuir popups descritivos em siglas/abreviações usando a tag "abbr". Como exemplo, <br> se tu passar o mouse sobre a sigla <abbr title="Hyper Text Markup Language">HTML</abbr> tu verá o seu significado em um popup, assim como <br> se tu passaro mouse agora sobre a sigla <abbr title="Cascading Style Sheets">CSS</abbr> também verá seu significado em um popup. <br> <br>
+
+Visualmente a sigla fica com um detalhe meio sublinhado, mas é possível estilizar isso usando CSS depois.</p> <br>
+
+<h3>Texto invertido</h3>
+<p>Bom, se tu quiser inverter um texto (não sei bem qual a utilidade mas fica aí como curiosidade kkkk) você pode usar <br> a tag de comando "bdo". Vamos usar um exemplo: <br><br> <bdo dir="rtl">Ao usar essa tag, o seu texto ficará invertido.</bdo> <br><br>
+
+Na linha de comando da tag "bdo" aparecerá um parâmetro <code>dir=""</code>, e dentro das aspas você pode pôr <br> <strong>"<abbr title="Right to left">rtl</abbr>" para ele inverter da direita para esquerda, ou "<abbr title="Left to right">ltr</abbr>" para inverter da esquerda para direita</strong>. </p><br> <br>
+
+<h2>Listas OL e UL</h2>
+<hr>
+<p>Iremos aprender agora a fazer...</p>
+
+
+
+
+
 
 
 
