@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Irei me tornar um site! WEEEE</h1>
-    <h1>By Hodricks &#x1F60E</h2>
+    <h1>By Hodricks &#x1F60E</h1>
     <hr>
 
     <p>Esse é o meu primeiro projeto em HTML5/CSS3, ramo simboraaaaa kkkkk.</p>
@@ -102,25 +102,26 @@ Lembre-se de sempre verificar se as imagens escolhidas nesses sites são realmen
 
     <h3>Texto marcado</h3>
     <p>Podemos usar a tag <mark>"mark"</mark>, <mark>que marca o texto com um marcador</mark>.</p>
-    <p>É possível fazer uma alteração pontual no comando da tag "mark", utilizando o comando "mark style", <br> e assim por exemplo alterar a cor do marcador. O caminho do comando e o resultado ficam assim: <br> <br>
+    <p>É possível fazer uma alteração pontual no comando da tag "mark", utilizando o comando "mark style", <br> e assim por exemplo alterar a cor do marcador. O caminho do comando e o resultado ficam assim:</p> <br>
 
-        "<code>mark style="background-color: lime;">a cor do marcador agora fica verde>mark</code>"  &rightarrow;
+        <code> < mark style="background-color: lime;" > a cor do marcador agora fica verde < /mark ></code>  &rightarrow;
 
     <mark style="background-color: lime;">a cor do marcador agora fica verde</mark><br><br>
 
-    Caso você queira alterar a cor de todos os marcadores de uma página, tu pode adicionar um comando lá em cima no código, <br> depois do "title", chamada "style", e dentro dela abrir o parâmetro: <br><br>
+    <p>Caso você queira alterar a cor de todos os marcadores de uma página, tu pode adicionar um comando lá em cima no código, <br> depois do "title", chamada "style", e dentro dela abrir o parâmetro:</p>
 
     <pre>
         <code>
-            style
-                mark{
-                   background-color: lime;
-                }
-            style
+                << style >
+                      mark {
+                          background-color: lime;
+                      }
+                << /style >
         </code>
-    </pre><br><br>
+    </pre>
 
-Dessa forma, todos os marcadores da página serão verdes no estilo "<mark style="background-color: lime;">lime</mark>". <br> *Obs: Os códigos citados neste tópico apresentam "&lt; &gt;" em alguns pontos, <br> principalmente no início e no final de segmento do código.</p> <br>
+<p>Dessa forma, todos os marcadores da página serão verdes no estilo <mark style="background-color: lime;">"lime"</mark>.</p>
+<p>*Obs: Desconsidere o "<" adicional os espaços entre os sinais "&lt; &gt;" no início/final das tags do código.</p> <br>
 
 <h3>Texto grande e texto pequeno</h3>
 <p>Vamos criar um <big>texto grande</big> e um <small>texto pequeno</small>... Para o texto grande, tu pode usar a tag "big",<br> porém ela está meio obsoleta então cuidado. Já para o texto pequeno, tu usa a tag "small". </p> <br>
@@ -182,7 +183,199 @@ Na linha de comando da tag "bdo" aparecerá um parâmetro <code>dir=""</code>, e
 
 <h2>Listas OL e UL</h2>
 <hr>
-<p>Iremos aprender agora a fazer...</p>
+<p>Iremos aprender agora a fazer listagens de itens, sendo a Listagem ordenada (OL), e a Listagem não ordenada (UL).</p>
+
+<h3>Listas Ordenadas (<abbr title="Ordenate List">OL</abbr>)</h3>
+<p>Iremos fazer uma lista ordenada para exemplificar, descrevendo ações de uma rotina qualquer. A tag de comando <br> que usaremos será "ol", e dentro dela, podemos setar o parâmetro <code>type="1"</code> para dizer ao VS Code que se trata de <br> uma lista numérica (ou A/a para uma lista alfabética, ou I/i para uma lista em algarismos romanos), e além disso <br> podemos na mesma linha de código configurar o parâmetro <code>start="2"</code> para que sua lista numérica comece a partir <br> do item 2 (mude esse parâmetro para quaisquer números que deseja que sua lista comece.). Após isso, para cada <br> item da sua lista, o mesmo deve estar escrito indvidualmente dentro de cada comando da tag "li". <br> <br> Veja abaixo como fica o código da Lista OL (desconsidere os espaços entre os sinais < > e o início/final das tags):</p>
+
+<pre>
+    <code>
+        < ol type="1" start="1" >
+             < li > Acordar < /li >
+             < li > Tomar banho < /li >
+             < li > Tomar café < /li >
+             < li > Ligar pra Abigail < /li >
+             < li > Escovar os dentes < /li > 
+           < /ol >
+        </code>
+    </pre>
+
+    <p>Agora veja o código rodando como fica a Lista OL:</p>
+
+    <ol type="1" start="1">
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Tomar café</li>
+        <li>Ligar para Abigail</li>
+        <li>Escovar os dentes</li> 
+    </ol> <br>
+
+
+
+<h3>Listas Não Ordenadas (<abbr title="Unordenate List">UL</abbr>)</h3>
+<p>Seguindo o mesmo princípio das listas ordenadas, as listas não ordenadas diferem apenas no fato de seus itens não <br> possuirem uma ordem em específico, utilizando de símbolos para pontuarem seus tópicos. A tag utilizada para as <br> listas não ordenadas é a "ul", onde na mesma linha do código tu pode alterar o tipo do símbolo que será utilizado <br> através do parâmetro <code>type="disc"</code> (disc para disco, circle para círculo e square para quadrado). <br><br> Veja um exemplo de listagem não ordenada logo abaixo:</p>
+
+<ul type="disc">
+    <li>Acordar</li>
+    <li>Tomar banho</li>
+    <li>Tomar café</li>
+    <li>Ligar para Abigail</li>
+    <li>Escovar os dentes</li> 
+</ul>
+
+<p>Muitos menus de sites da web são feitos a partir de Listas UL.</p> <br>
+
+<h3>Juntando listas e criando sublistas</h3>
+<p>Podemos abrir sublistas dentro das listas OL e UL, bastando apenas repetir uma tag dentro da outra. <br> Veja um exemplo como fica:</p>
+
+<ol>
+    <li>Exemplos de línguagens antigas de programação:</li><br>
+    <ol type="a">
+        <li>Clipper</li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphin</li>
+    </ol><br>
+
+    <li>Exemplos de linguagens de programação mais recentes:</li><br>
+    <ol type="a" start="5">
+        <li>PHP</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+    </ol>
+</ol>
+
+<p>Perceba ali na lista nº2 que sua sublista começou a partir da letra "e", isso ocorreu devido ao parâmetro <br> <code>start="5"</code>, que fez a sublista iniciar a partir do 5° caractere do alfabeto. <br><br> Veja abaixo como o código fica escrito (desconsidere os espaços entre os < >):</p>
+
+<pre>
+    <code>
+< ol >
+    < li > Exemplos de línguagens antigas de programação: < /li > < br >
+    < ol type="a" >
+        < li > Clipper < /li >
+        < li > Visual Basic < /li >
+        < li > Fortran < /li >
+        < li > Delphin < /li >
+    < /ol > < br >
+
+    < li >Exemplos de linguagens de programação mais recentes: < /li > < br >
+    < ol type="a" start="5" >
+        < li > PHP < /li >
+        < li > Python < /li >
+        < li > JavaScript < /li >
+        < li > Kotlin < /li >
+    < /ol >
+< /ol >
+    </code>
+</pre>
+
+<p>Podemos juntar os dois tipos de listas OL e UL no mesmo código, apenas abrindo uma tag dentro da outra. Veja o exemplo abaixo:</p>
+
+<ol>
+    <li>Títulos de games famosos do PlayStation:</li><br>
+    <ul type="square">
+        <li>God of War</li><br>
+        <ul type="circle">
+            <li>God od War</li>
+            <li>God of War 2</li>
+            <li>God of War 3</li>
+            <li>God of War "4"</li>
+        </ul><br>
+        <li>Gran Turismo</li><br>
+        <ul type="circle">
+            <li>Gran Turismo 4</li>
+            <li>Gran Turismo 7</li>
+        </ul><br>
+        <li>Horizon the Zero Down</li><br>
+        <li>The Last of Us</li>
+    </ul><br>
+
+    <li>Títulos famosos de games do Android:</li><br>
+    <ul type="square">
+        <li>Real Racing</li>
+        <li>Fruit Ninja</li>
+        <li>Nobleman</li>
+        <li>Piano Tiles</li>
+    </ul>
+</ol>
+
+<p>Veja logo abaixo o código como fica escrito:</p>
+
+<pre>
+    <code>
+< ol >
+    < li > Títulos de games famosos do PlayStation: < /li > < br >
+    < ul type="square" >
+        < li > God of War < /li > < br >
+        < ul type="circle" >
+            < li > God od War < /li >
+            < li > God of War 2 < /li >
+            < li > God of War 3 < /li >
+            < li > God of War "4" < /li >
+        < /ul > < br >
+         < li > Gran Turismo < /li > < br >
+        < ul type="circle" >
+            < li > Gran Turismo 4 < /li >
+            < li > Gran Turismo 7 < /li >
+        < /ul > < br >
+        < li > Horizon the Zero Down < /li >
+        < li > The Last of Us < /li >
+    < /ul > < br >
+
+    < li > Títulos famosos de games do Android: < /li > < br >
+    < ul type="square" >
+        < li > Real Racing < /li >
+        < li > Fruit Ninja < /li >
+        < li > Nobleman < /li >
+        < li > Piano Tiles < /li >
+    < /ul >
+ < /ol >
+</code>
+</pre>
+
+<h3>Listas de Definições (<abbr title="Definition List">DL</abbr>)</h3>
+<p>Temos duas tags usadas nesse tipo de listagem:</p>
+
+<ul>
+    <ul type="disc">
+        <li>Termo descrito, representado pela tag "dt"; </li>
+        <li>Descrição do termo, representado pela tag "dd".</li>
+     </ul>
+</ul>
+
+<p>Iremos mostrar um exemplo abaixo:</p>
+
+<dl>
+    <dt>O que é o HTML?</dt><br>
+    <dd>HTML abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação <br> de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web.</dd><br>
+    <dt>O que é CSS?</dt><br>
+    <dd>A sigla CSS significa Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</dd>
+</dl>
+
+<p>Motores de busca como o do Google se beneficiam muito quando uma página web possui em seu código HTML as Listas <br> de Definições, pois estas agilizam o a procura que o motor de busca faz na rede.</p><br>
+
+<h2>Utilizando Links</h2>
+<hr>
+<p>Os links são elementos de interação que te levam para um endereço específico. Este endereço pode estar em algum <br> arquivo local (na sua máquina), ou pode estar ligado a algum arquivo hospedado na web.</p><br>
+
+<h3>Usando Links Externos</h3>
+<p>Você pode usar links externos no seu site, para que estes encaminhem o usuário da sua página para outras páginas <br> de seu interesse. A tag usada para links externos é a "a". Veja um exemplo abaixo de link externo:</p>
+
+<p>"Você pode acessar o repositório deste blog tutorial <a href="https://github.com/Hodricks/curso-basico-html-css" target="_blank" rel="external">bem aqui neste link, é só clicar!</a>"</p>
+
+<p>Muito importante que você adicione os parâmetros <code>target="_blank" rel="external"</code> logo depois de ter adicionado <br> o link na tag, pois estes parâmetros fazem com que a sua página origem mantenha-se aberta, enquanto uma nova <br> aba com o endereço do link é aberta no navegador do usuário. Veja abaixo o código como fica escrito <br> (desconsidere os espaços entre os < >):</p>
+
+"Você pode acessar o repositório deste blog tutorial <br> < a href="https://github.com/Hodricks/curso-basico-html-css" target="_blank" rel="external" > bem aqui neste link, é só clicar! < /a >" <br><br>
+
+<h3>Links Internos</h3>
+<p>Podemos também adicionar na nossa página web os links internos...</p>
+
+
+
+
+
+
 
 
 

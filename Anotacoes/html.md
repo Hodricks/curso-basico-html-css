@@ -2,7 +2,9 @@
 <h2>Atalhos:</h2><br>
 
 
-<p>---> <b>Alt+Z</b>: Centraliza janela de código;<br> 
+<p>
+---> <b>Alt+Z</b>: Centraliza janela de código;<br>
+---> <b>Clicar antes dos caracteres segurando Alt</b>: Seleciona múltiplas linhas de código;<br>  
 ---> <b>Crtl+S</b>: Salva; <br>
 ---> <b>Ctrl+Z</b>: Volta; <br>
 ---> <b>Ctrl+C</b>: Copia;<br>
