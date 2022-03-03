@@ -12,6 +12,7 @@
 ---> <b>Ctrl+V</b>: Cola;<br>
 ---> <b>Ctrl+J</b>: Abre/fecha o terminal;<br>
 ---> <b>Ctrl + ou - </b>: Aumenta/diminui o zoom da tela;<br>
+---> <b>Ctrl+Espaço</b>: Dentro das áspas de um comando, abre um buscador de arquivos;<br>
 ---> <b>Ctrl+shift+P</b>: Envelopa itens selecionados (depois de selecionar os itens e digitar o comando, escreva abb <br> e selecione Wrap with Abbreviation, e em seguida selecione o comando que deseja envelopar ["p","h1","b","i"...]).</p><br><br>
 
 <h2>Comandos para subir novas alterações no reposiório github (Siga a ordem!):</h2> <br>
@@ -35,7 +36,7 @@ Em seguida, o VS Code irá solicitar seu nome de Usuário e Senha (Personal acce
 
 -Primeiro clona a pasta do projeto que está com problema, indo no github, depois clicando no botão Code, e copiando o link HTTPS;
 
--Crie uma pasta nova com nome aleatório;
+-Depois, crie uma pasta nova lá no seu gerenciador de arquivos (no mesmo caminho da pasta antiga) com nome aleatório;
 
 -Entra na pasta nova e com botão direito abre o git bash here;
 

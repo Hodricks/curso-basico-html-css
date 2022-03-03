@@ -359,7 +359,7 @@ Na linha de comando da tag "bdo" aparecerá um parâmetro <code>dir=""</code>, e
 <hr>
 <p>Os links são elementos de interação que te levam para um endereço específico. Este endereço pode estar em algum <br> arquivo local (na sua máquina), ou pode estar ligado a algum arquivo hospedado na web.</p><br>
 
-<h3>Usando Links Externos</h3>
+<h3>Links Externos</h3>
 <p>Você pode usar links externos no seu site, para que estes encaminhem o usuário da sua página para outras páginas <br> de seu interesse. A tag usada para links externos é a "a". Veja um exemplo abaixo de link externo:</p>
 
 <p>"Você pode acessar o repositório deste blog tutorial <a href="https://github.com/Hodricks/curso-basico-html-css" target="_blank" rel="external">bem aqui neste link, é só clicar!</a>"</p>
@@ -369,7 +369,7 @@ Na linha de comando da tag "bdo" aparecerá um parâmetro <code>dir=""</code>, e
 "Você pode acessar o repositório deste blog tutorial <br> < a href="https://github.com/Hodricks/curso-basico-html-css" target="_blank" rel="external" > bem aqui neste link, é só clicar! < /a >" <br><br>
 
 <h3>Links Internos</h3>
-<p>Podemos também adicionar na página web os links internos, que servem para levar o usuário da página atual para outras <br> páginas inernas de seu interesse. Para criação do link interno usamos a tag "a", mas antes, iremos primeiro no VS Code, <br> onde nós precisamos criar um outro arquivo <strong>.html</strong> para servir como nossa próxima página de navegação.</p>
+<p>Podemos também adicionar na página web os links internos, que servem para levar o usuário da página atual para outras <br> páginas inernas de seu interesse (submenus,etc). Para criação do link interno usamos a <strong>tag "a"</strong>, mas antes, iremos primeiro no VS Code, <br> onde nós precisaremos criar um outro arquivo <strong>.html</strong> para servir como nossa próxima página de navegação.</p>
 
 <p>Nossa página 2 por assim dizer será o outro arquivo <strong>.html</strong> que criamos, chamado <code>pag02.html</code>, e que tu pode <br> acessar <a href="pag02.html" rel="next">através deste link aqui!</a></p>
 
@@ -377,9 +377,30 @@ Na linha de comando da tag "bdo" aparecerá um parâmetro <code>dir=""</code>, e
 
 <p><code>< a href="pag02.html" rel="next">através deste link aqui!< /a ></code></p>
 
-<p>Perceba que dentro da tag "a" temos o parâmetro <code>rel="next"</code> e <code>rel="prev"</code>, onde o primeiro serve para <br> tu informar ao motor de busca do navegador que aquele link será a próxima página, assim como o segundo <br> que refere-se ao motor de busca como aquele link sendo a página anterior</p>
+<p>Perceba que dentro da tag "a" temos o parâmetro <code>rel="next"</code> e <code>rel="prev"</code>, onde o primeiro serve para <br> tu informar ao motor de busca do navegador que aquele link será a próxima página, assim como o segundo <br> que refere-se ao motor de busca como aquele link voltando a página anterior</p>
 
-<p>Podemos também criar um link interno para um site em que desejamos indicar ao motor de busca apenas para citar uma outra página, com a tag "a" e o parâmetro adicional....</p>
+<p>Podemos também criar um link interno para um site em que desejamos indicar ao motor de busca "apenas para citar uma outra página", <br> com a tag "a" e o parâmetro adicional chamado "<strong>nofollow</strong>", e assim desta forma citar a outra página sem que o motor de busca <br> indexe informações (sem fazer associações de código) entre a sua página e a página citada via link.</p>
+
+<p>Um exemplo do uso dessa tag "a" com uso do "nofollow" pode ser representado por  <a href="https://github.com/" target="_blank" rel="nofollow">este link para o site da GitHub</a>.</p>
+
+<p>Veja como fica o código do link acima (desconsidere os espaços entre os < >):</p>
+
+<p><code>< a href="https://github.com/" target="_blank" rel="nofollow">site da GitHub< /a ></code></p>
+
+<p>Podemos criar uma página 3 para nosso site de uma forma diferente, usando um arquivo <strong>.html</strong> novo, <br> chamado pag03, dentro de uma nova pasta lá no VS Code. Para isso, primeiramente criaremos uma nova pasta no botão <br> de "nova pasta, com símbolo de uma pasta com um +" (com nome "noticias" por exemplo), e depois, dentro dessa <br> nova pasta é que iremos criar o arquivo pag03.</p>
+
+<p>Desta forma, temos o link para terceira página, <a href="noticias/pag03.html" rel="next" target="_self">acessando este link!</a>.</p>
+
+<p>Veja como fica o código do link acima (desconsidere os espaços entre os < >):</p>
+
+<p><code>< a href="noticias/pag03.html" rel="next" target="_self">acessando este link!< /a ></code></p>
+
+<p>Por fim, perceba que dentro da composição da tag "a" temos um complemento <code>target="_blank"</code> e o <code>target="_self"</code>. <br> O primeiro é o parâmetro que abrirá o link em uma nova guia no navegador do usuário, mantendo a guia original aberta, <br> já o segundo abre o link na mesma guia original.</p>
+
+<h3>Links para fazer um Download</h3>
+<p>Para disponibilizarmos arquivos que possam ser baixados pelos usuários, podemos criar os links para download.</p>
+
+
 
 
 
